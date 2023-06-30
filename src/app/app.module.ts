@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+
+import { ButtonComponent } from './button/button.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -21,7 +23,9 @@ import {MatButtonModule} from '@angular/material/button';
         BrowserAnimationsModule,
         MatCardModule,
         MatButtonModule,
-        CardComponent
+        CardComponent,
+        ButtonComponent,
+        
     ]
 })
 export class AppModule { }
