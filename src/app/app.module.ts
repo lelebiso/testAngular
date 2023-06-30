@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 
 import { ButtonComponent } from './button/button.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import {MatCardModule} from '@angular/material/card';
         MatButtonModule,
         CardComponent,
         ButtonComponent,
-        
+        MatInputModule,
+
     ]
 })
 export class AppModule { }

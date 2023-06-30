@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test';
+  title = 'testb';
+
+  onInput(event: Event) {
+    console.log((<HTMLInputElement>event.target).value)
+  }
 }
