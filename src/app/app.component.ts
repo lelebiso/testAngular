@@ -9,6 +9,10 @@ export class AppComponent {
   title = 'testb';
 
   onInput(event: Event) {
-    console.log((<HTMLInputElement>event.target).value)
+    this.title = (<HTMLInputElement>event.target).value
   }
+  onClick(event: Event) {
+    this.title = 'ho cliccato sul bottone'
+  }
+  
 }
