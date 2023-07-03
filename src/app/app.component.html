@@ -2,6 +2,34 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <button mat-raised-button color="primary" (click)="onClick($event)">Primary</button>
 <br>
 <mat-form-field class="example-full-width" appearance="fill">
@@ -11,10 +39,20 @@
 <p>{{title}}</p>
 <br>
 <br>
-<br>
-<br>
 <cardComponent></cardComponent>
 <br>
+<p *ngIf="isVisible">è visibile</p>
+<p *ngIf="!isVisible">non è visibile</p>
+<br>
+<br>
+<ng-template *ngIf="isVisible; then bloccoIf else bloccoElse">Sono visibile</ng-template>
+
+<ng-template #bloccoIf> 
+    <p>sono visibile</p> 
+</ng-template>
+<ng-template #bloccoElse>
+    <p>non sono visibile</p>
+</ng-template> 
 
 <br>
 <app-button> </app-button>
