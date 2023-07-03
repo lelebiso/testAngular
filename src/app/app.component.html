@@ -1,6 +1,4 @@
-<br>
-<br>
-<br>
+
     <div [ngSwitch]="string">
         <p *ngSwitchCase="'pippo'">uno</p>
         <p *ngSwitchCase="'topolino'">due</p>
@@ -13,7 +11,12 @@
 <br>
 <br>
 <br>
-<br>
+    <ul>
+        <li *ngFor="let persona of persone">
+            <div class="cerchio" [ngStyle]="{'background': persona.isOnline ? 'green': 'red'}"></div>
+            <p>{{persona.nome}} {{persona.cognome}}</p>
+        </li>
+    </ul>
 <br>
 <br>
 <br>

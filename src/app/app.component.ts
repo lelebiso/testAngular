@@ -19,6 +19,8 @@ export class AppComponent {
     {nome: "sandro", cognome: "blu", isOnline: false},
   ]
 
+  color = 'green';
+
   onInput(event: Event) {
     this.title = (<HTMLInputElement>event.target).value
   }
