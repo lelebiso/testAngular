@@ -9,6 +9,14 @@ export class AppComponent {
   title = 'testb';
   isVisible = true;
 
+  persone = [
+    {nome: "luca", cognome: "rossi", isOnline: true},
+    {nome: "anna", cognome: "sorro", isOnline: true},
+    {nome: "marco", cognome: "verdi", isOnline: false},
+    {nome: "leonado", cognome: "neri", isOnline: true},
+    {nome: "sandro", cognome: "blu", isOnline: false},
+  ]
+
   onInput(event: Event) {
     this.title = (<HTMLInputElement>event.target).value
   }

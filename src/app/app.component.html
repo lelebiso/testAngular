@@ -12,6 +12,23 @@
 <br>
 <br>
 <br>
+    <div *ngFor="let persona of persone; index as i">
+        <p class="cerchioV" *ngIf="persona.isOnline"></p>
+        <p class="cerchioR" *ngIf="!persona.isOnline"></p>        
+        <p>{{i}} {{persona.nome}} {{persona.cognome}}</p>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

@@ -1,0 +1,11 @@
+.cerchioV, .cerchioR{
+    width: 10px;
+    height: 10px;
+}
+.cerchioV{
+    background-color: green;
+}
+
+.cerchioR{
+    background-color: red;
+}
