@@ -1,6 +1,13 @@
 <br>
 <br>
 <br>
+    <div [ngSwitch]="string">
+        <p *ngSwitchCase="'pippo'">uno</p>
+        <p *ngSwitchCase="'topolino'">due</p>
+        <p *ngSwitchCase="'pluto'">tre</p>
+        <p *ngSwitchCase="'paperino'">quattro</p>
+        <p *ngSwitchDefault="">default</p>
+    </div>
 <br>
 <br>
 <br>

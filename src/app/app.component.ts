@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'testb';
   isVisible = true;
+  num = 3;
+  string = "topolino";
 
   persone = [
     {nome: "luca", cognome: "rossi", isOnline: true},
