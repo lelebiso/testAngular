@@ -14,7 +14,7 @@
 <!-- [ngStyle]="{'background': persona.isOnline ? 'green': 'red'}" -->
     <ul>
         <li *ngFor="let persona of persone; index as i">
-            <div class="cerchio" [ngClass]="{'cerchioOnline': persona.isOnline,'cerchioOffline': !persona.isOnline }" >i</div>
+            <div class="cerchio" [ngClass]="{'cerchioOnline ': persona.isOnline,'cerchioOffline': !persona.isOnline }" >i</div>
             <p>{{persona.nome}} {{persona.cognome}}</p>
         </li>
     </ul>
@@ -40,6 +40,9 @@
 <br>
 <br>
 <br>
+    <app-prova [data]="persone"></app-prova>
+    <button (click)="onClickData()">cambia</button>
+
 <br>
 <br>
 <br>

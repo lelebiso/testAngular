@@ -11,10 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { ButtonComponent } from './button/button.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
+import { ProvaComponent } from './prova/prova.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        ProvaComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
